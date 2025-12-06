@@ -44,29 +44,28 @@ public class Main {
 					switch (opcaoAdd) {
 					case '1':
 						cofre.adicionar(dolar);
-						System.out.println("Dólar adicionado!");
+						System.out.println("Dólar adicionado!\n");
 						break;
 					case '2':
 						cofre.adicionar(euro);
-						System.out.println("Euro adicionado!");
+						System.out.println("Euro adicionado!\n");
 						break;
 					case '3':
 						cofre.adicionar(real);
-						System.out.println("Real adicionado!");
+						System.out.println("Real adicionado!\n");
 						break;
 					case '4':
 						loopAdd = false;
 						break;
-						
+
 					default:
-						System.out.println("Opção inválida!");
+						System.out.println("Opção inválida!\n");
 					}
-					break;
 				}
 				break;
 			case '2':
 				boolean loopRemove = true;
-				
+
 				while (loopRemove) {
 					System.out.println("1 - remover Dólar");
 					System.out.println("2 - remover Euro");
@@ -113,14 +112,15 @@ public class Main {
 					break;
 				case '2':
 					System.out.println("Dólar: R$ " + String.format("%.2f", dolar.converter()));
-                    System.out.println("Euro : R$ " + String.format("%.2f", euro.converter()));
-                    System.out.println("Real : R$ " + String.format("%.2f", real.converter()));
-                    break;
+					System.out.println("Euro : R$ " + String.format("%.2f", euro.converter()));
+					System.out.println("Real : R$ " + String.format("%.2f", real.converter()));
+					break;
 				case '3':
 					break;
 				default:
 					System.out.println("Opção inválida!");
 				}
+				break;
 			case '5':
 				loop = false;
 				System.out.println("Saindo...");
